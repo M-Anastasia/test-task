@@ -1,13 +1,10 @@
 package com.haulmont.testtask.view;
 
 import com.haulmont.testtask.controller.RecipeController;
-import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.ui.*;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 
 /**
  * Created by fishn on 30.07.2019.

@@ -2,11 +2,8 @@ package com.haulmont.testtask.controller;
 
 import com.haulmont.testtask.dao.RecipeDao;
 import com.haulmont.testtask.dao.RecipeDaoImpl;
-import com.haulmont.testtask.db.DatabaseConnection;
 import com.haulmont.testtask.model.Recipe;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;

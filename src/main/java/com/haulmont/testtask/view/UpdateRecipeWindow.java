@@ -3,7 +3,6 @@ package com.haulmont.testtask.view;
 import com.haulmont.testtask.controller.DoctorController;
 import com.haulmont.testtask.controller.PatientController;
 import com.haulmont.testtask.controller.RecipeController;
-import com.haulmont.testtask.model.Patient;
 import com.haulmont.testtask.model.Recipe;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.data.validator.StringLengthValidator;

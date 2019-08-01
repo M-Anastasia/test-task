@@ -3,7 +3,6 @@ package com.haulmont.testtask.view;
 import com.haulmont.testtask.controller.DoctorController;
 import com.haulmont.testtask.model.Doctor;
 import com.vaadin.data.validator.StringLengthValidator;
-import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.*;
 
 import java.sql.SQLException;

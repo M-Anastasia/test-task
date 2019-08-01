@@ -2,7 +2,6 @@ package com.haulmont.testtask.dao;
 
 import com.haulmont.testtask.controller.RecipeController;
 import com.haulmont.testtask.db.DatabaseConnection;
-import com.haulmont.testtask.model.Doctor;
 import com.haulmont.testtask.model.Patient;
 
 import java.sql.Connection;

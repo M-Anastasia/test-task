@@ -1,18 +1,10 @@
 package com.haulmont.testtask.view;
 
-import com.haulmont.testtask.controller.PatientController;
-import com.haulmont.testtask.db.DatabaseInit;
-import com.haulmont.testtask.model.Patient;
-import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.Alignment;
-import com.vaadin.ui.Grid;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
-
-import java.sql.SQLException;
-import java.util.List;
 
 /**
  * Created by fishn on 28.07.2019.

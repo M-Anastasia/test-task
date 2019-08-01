@@ -9,7 +9,6 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.List;
 
 /**

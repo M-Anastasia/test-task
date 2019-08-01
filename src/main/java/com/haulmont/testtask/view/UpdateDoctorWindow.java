@@ -6,7 +6,6 @@ import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.ui.*;
 
 import java.sql.SQLException;
-import java.util.WeakHashMap;
 
 /**
  * Created by fishn on 29.07.2019.

@@ -1,7 +1,5 @@
 package com.haulmont.testtask.dao;
 
-import com.haulmont.testtask.model.Doctor;
-import com.haulmont.testtask.model.Patient;
 import com.haulmont.testtask.model.Recipe;
 
 import java.sql.SQLException;

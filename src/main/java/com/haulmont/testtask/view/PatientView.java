@@ -1,15 +1,12 @@
 package com.haulmont.testtask.view;
 
-import com.haulmont.testtask.controller.DoctorController;
 import com.haulmont.testtask.controller.PatientController;
 import com.haulmont.testtask.db.DatabaseInit;
-import com.haulmont.testtask.model.Doctor;
 import com.haulmont.testtask.model.Patient;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
-import org.hsqldb.HsqlException;
 
 import java.sql.SQLException;
 import java.util.List;

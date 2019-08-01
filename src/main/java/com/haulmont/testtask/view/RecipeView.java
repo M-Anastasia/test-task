@@ -2,11 +2,8 @@ package com.haulmont.testtask.view;
 
 import com.haulmont.testtask.controller.RecipeController;
 import com.haulmont.testtask.db.DatabaseInit;
-import com.haulmont.testtask.model.Patient;
 import com.haulmont.testtask.model.Recipe;
 import com.vaadin.data.util.BeanItemContainer;
-import com.vaadin.data.validator.LongRangeValidator;
-import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;

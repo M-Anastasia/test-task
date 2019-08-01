@@ -1,8 +1,6 @@
 package com.haulmont.testtask.view;
 
-import com.haulmont.testtask.controller.DoctorController;
 import com.haulmont.testtask.controller.PatientController;
-import com.haulmont.testtask.model.Doctor;
 import com.haulmont.testtask.model.Patient;
 import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.ui.*;
