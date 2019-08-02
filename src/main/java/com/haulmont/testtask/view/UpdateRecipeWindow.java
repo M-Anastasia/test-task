@@ -75,6 +75,7 @@ public class UpdateRecipeWindow extends Window{
         doctorId.setValue(doctorId.getItemIds().iterator().next());
 
         duration = new TextField("Duration", recipe.getDuration()+"");
+        duration.addValidator(new StringLengthValidator("from 1 to 999",1,3,false));
         duration.setRequired(true);
         duration.setRequiredError("field is empty!");
 
@@ -94,8 +95,7 @@ public class UpdateRecipeWindow extends Window{
         updateContent.addComponent(duration);
         updateContent.addComponent(priority);
 
-        Button update = new Button("Update", e -> updateRecipe(new Recipe(id,description.getValue(),(Long)patientId.getValue(),
-                (Long)doctorId.getValue(),new Date(),Integer.parseInt(duration.getValue()),(String)priority.getValue())));
+        Button update = new Button("Update", e -> updateRecipe(id));
         updateContent.addComponent(update);
         Button cancel = new Button("Cancel", e -> close());
         cancel.setDisableOnClick(true);
@@ -106,17 +106,21 @@ public class UpdateRecipeWindow extends Window{
         center();
     }
 
-    private void updateRecipe(Recipe recipe) {
-        if (description.isValid()){
+    private void updateRecipe(Long id) {
+        String test = "\\d+";
+        if (description.isValid()&&duration.getValue().matches(test)&&duration.isValid()){
             try {
-                recipeController.update(recipe);
+                recipeController.update(new Recipe(id,description.getValue(),(Long)patientId.getValue(),
+                        (Long)doctorId.getValue(),new Date(),Integer.parseInt(duration.getValue()),(String)priority.getValue()));
             } catch (SQLException e) {
                 e.printStackTrace();
             }
             close();
         }
         else {
-            Notification.show("you need to fill all fields", Notification.Type.TRAY_NOTIFICATION);
+            Notification.show("You need to fill all fields," +
+                    " or you enter letters in the \"Duration\" field, " +
+                    "or duration is too long (valid values range from 1 to 999)", Notification.Type.TRAY_NOTIFICATION);
             close();
         }
     }
